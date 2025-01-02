@@ -8,9 +8,12 @@
 >
   <c-sidebar-header class="border-bottom">
     <c-sidebar-brand [routerLink]="[]">
-      <svg [class]="{icon: false}" cIcon class="sidebar-brand-full" height="32" name="logo" title="CoreUI Logo"></svg>
-      <svg cIcon class="sidebar-brand-narrow" height="32" name="signet" title="CoreUI Logo"></svg>
-    </c-sidebar-brand>
+      <img src="assets/images/logo.png" class="sidebar-brand-full" height="80" alt="Social App Logo" 
+        style="background-color: #fff; border-radius: 50%; padding: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"
+      
+      >
+      <img src="assets/images/logo.png" class="sidebar-brand-narrow" height="80" alt="Social App Logo">
+                </c-sidebar-brand>
   </c-sidebar-header>
 
   <ng-scrollbar #scrollbar="ngScrollbar" (updated)="onScrollbarUpdate(scrollbar.state)" class="overflow" pointerEventsMethod="scrollbar" visibility="hover">

@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for a new feature in CoreUI Free Angular Admin Template.
+about: Suggest an idea for a new feature in CONNECTI.
 title: ''
 labels: feature
 assignees: ''
