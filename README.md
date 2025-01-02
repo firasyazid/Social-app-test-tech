@@ -8,6 +8,7 @@
 ```bash
 git clone (https://github.com/firasyazid/Social-app-test-tech.git)
 npm install
+ng serve
 
 
 
