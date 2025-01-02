@@ -4,8 +4,7 @@
 
 ## How to Use
 
-### 1. Clone the Repository
-```bash
+ ```bash
 git clone (https://github.com/firasyazid/Social-app-test-tech.git)
 npm install
 ng serve
