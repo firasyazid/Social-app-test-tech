@@ -1,0 +1,46 @@
+<div class="post-creator p-3 bg-white rounded shadow-sm">
+    <div class="d-flex align-items-center mb-3">
+      <img src="assets/images/avatars/1.jpg" alt="Avatar" class="rounded-circle me-2" width="40" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Quoi de neuf ?"
+        [(ngModel)]="content"
+      />
+    </div>
+  
+    <div class="d-flex justify-content-around text-secondary mb-3">
+      <button class="btn btn-light text-danger">
+        <i class="fas fa-video"></i> Direct
+      </button>
+      <button class="btn btn-light text-success">
+        <i class="fas fa-photo-video"></i> Photo
+      </button>
+      <button class="btn btn-light text-primary">
+        <i class="fas fa-film"></i> Vidéo
+      </button>
+      <button class="btn btn-light text-warning">
+        <i class="fas fa-smile"></i> Humeur
+      </button>
+    </div>
+  
+    <!-- Bouton Publier -->
+    <div class="d-grid">
+        <button class="btn btn-primary" (click)="onCreatePost()" style="width: 150px ;
+        align-self: center; align-content: center; margin: auto; margin-top: 10px; margin-bottom: 10px;
+        ">
+          Publier
+        </button>
+      </div>
+      
+    <!-- Message d'erreur -->
+    <div *ngIf="errorMessage" class="text-danger mt-2">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Message de succès -->
+    <div *ngIf="successMessage" class="text-success mt-2">
+      {{ successMessage }}
+    </div>
+  </div>
+  
